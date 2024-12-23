@@ -305,7 +305,7 @@ pub struct BlobLfsInfo {
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct SafeTensorsInfo {
-    pub parameters: i64,
+    pub parameters: Option<HashMap<String, serde_json::Value>>,
     pub total: i64,
 }
 
